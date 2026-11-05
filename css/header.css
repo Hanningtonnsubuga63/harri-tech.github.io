@@ -1,0 +1,150 @@
+
+footer {
+  background: #080b21;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+/* Custom Header Background */
+.custom-header {
+  background-color: #080b21; /* Dark Blue */
+}
+
+/* Navbar Links */
+.custom-header .nav-link {
+  color: #ffffff; /* White text */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-header .nav-link:hover {
+  color: #f0f8ff; /* Light blue text */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight */
+  border-radius: 15%; /* Rounded hover effect */
+  font-weight: 700;
+}
+/* Active Page Link */
+.custom-header .nav-link.active {
+  color: #0187fd !important;       /* Light blue text */
+  background-color: rgba(255, 255, 255, 0.2); /* Slight highlight */
+  border-radius: 15%;
+  font-weight: 700;
+}
+
+header {
+  background: #0a1c38;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #64ffda;
+}
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0a192f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+.footer a:hover {
+  color: #0d6efd !important; /* Bootstrap blue hover */
+}
+
+.footer h5 {
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+.footer {
+  background-color: #080b21; /* Dark Blue */
+}
+
+.footer a:hover {
+  color: #0d6efd !important; /* Bright blue hover */
+}
+
+
+/* Custom Dark Blue Header */
+.custom-header {
+  background-color: #080b21 !important; /* Deep dark blue */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4); /* Strong shadow */
+}
+
+/* Brand Styling */
+.custom-header .navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Navbar Links */
+.custom-header .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.custom-header .nav-link:hover {
+  color: #ffeb3b !important; /* Yellow highlight */
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+/* Active Link */
+.custom-header .nav-link.active {
+  color: #0d6efd !important; /* Bright blue highlight */
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+/* Mobile Toggle Icon */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes toggle icon white */
+}
